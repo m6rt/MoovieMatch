@@ -1,6 +1,7 @@
 {
     "welcome": "Hoşgeldiniz,",
-    "please": "Lütfen giriş yapın",
+    "pleaselogin": "Lütfen giriş yapın",
+    "pleaseregister": "Lütfen kayıt olun",
     "send": "GONDER",
     "donthave": "Hesabınız yok mu?",
     "forgotpassword": "şifrenizi mi unuttunuz?",

@@ -3,6 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:mooviematch/generated/l10n.dart';
 import 'package:mooviematch/providers/locale_provider.dart';
 import 'package:mooviematch/views/login_view.dart';
+import 'package:mooviematch/views/register_view.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
             GlobalCupertinoLocalizations.delegate,
           ],
           supportedLocales: S.delegate.supportedLocales,
-          home:  LoginView(),
+          home:  RegisterView(),
         );
       },
     );

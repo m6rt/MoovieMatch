@@ -5,8 +5,8 @@ import 'package:mooviematch/generated/l10n.dart';
 import 'package:mooviematch/widgets/login_register_buttons.dart';
 import 'package:mooviematch/widgets/set_language_buttons.dart';
 
-class LoginView extends StatelessWidget {
-  LoginView({super.key});
+class RegisterView extends StatelessWidget {
+  RegisterView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,7 @@ class LoginView extends StatelessWidget {
           Padding(
             padding:  EdgeInsets.fromLTRB(screenWidth*0.05, screenHeight*0.9, 0, 0),
             child: Text(
-              S.of(context).pleaselogin,
+              S.of(context).pleaseregister,
               style: TextStyle(
                 color: AppTheme.textColor,
                 fontSize: 64,
@@ -55,14 +55,21 @@ class LoginView extends StatelessWidget {
             child: loginTextFields(screenHeight, screenWidth, false,true,false), //email
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(
-              screenWidth * 0.05,
-              screenHeight * 1.30,
-              0,
-              0,
+            padding: EdgeInsets.fromLTRB(screenWidth * 0.05,screenHeight * 1.30,0,0,
             ),
-            child: loginTextFields(screenHeight, screenWidth, true,false,true), //password
+            child: loginTextFields(screenHeight, screenWidth, false,false,false), //password
           ),
+    /*
+           Padding(
+            padding: EdgeInsets.fromLTRB(screenWidth * 0.05,screenHeight * 1.15,0,0,),
+            child: loginTextFields(screenHeight, screenWidth, true,false,false), //Password
+          ),
+          
+          Padding(
+            padding: EdgeInsets.fromLTRB(screenWidth * 0.05,screenHeight * 1.30,0,0,),
+            child: loginTextFields(screenHeight, screenWidth, true,false,true), // Confirm password
+          ),
+          */
           Padding(
             padding:  EdgeInsets.fromLTRB(screenWidth*0.05, screenHeight*1.42, 0, 0),
             child: forgotPasswordButton(S.of(context).forgotpassword),

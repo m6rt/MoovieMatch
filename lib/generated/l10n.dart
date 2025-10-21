@@ -59,9 +59,24 @@ class S {
     return Intl.message('Welcome,', name: 'welcome', desc: '', args: []);
   }
 
-  /// `Please login`
-  String get please {
-    return Intl.message('Please login', name: 'please', desc: '', args: []);
+  /// `Please log in`
+  String get pleaselogin {
+    return Intl.message(
+      'Please log in',
+      name: 'pleaselogin',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please register`
+  String get pleaseregister {
+    return Intl.message(
+      'Please register',
+      name: 'pleaseregister',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `SEND`

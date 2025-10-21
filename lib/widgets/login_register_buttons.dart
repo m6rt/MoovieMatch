@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:mooviematch/constants/theme.dart';
-import 'package:mooviematch/generated/l10n.dart';
 
 final TextEditingController _emailController = TextEditingController();
 final TextEditingController _passwordController = TextEditingController();
+final TextEditingController _passwordControllerVerifaciton = TextEditingController();
+final TextEditingController _usernameController = TextEditingController();
+
+
 
 Widget loginTextFields(
   double screenHeight,
   double screenWidth,
-  bool isLoginButton,
+  bool isPasswordButton,
+  bool isEmailButton,
+  bool isConfirmPasswordButton,
 ) {
+
   return Container(
     width: screenWidth * 0.9,
     height: screenHeight * 0.12,
@@ -28,14 +34,16 @@ Widget loginTextFields(
           horizontal: screenWidth * 0.05,
         ),
         border: InputBorder.none,
-        hintText: isLoginButton ? "Password" : "Email", //DÜZELT LOCAL YOK
+        hintText:  isPasswordButton ? isConfirmPasswordButton ? "Confirm Password" : "Password" :  isEmailButton ? "Email" : "username",//DÜZELT LOCAL YOK
         hintStyle: const TextStyle(color: AppTheme.textColor),
       ),
-      controller: isLoginButton ? _passwordController : _emailController,
+      controller: isPasswordButton ? isConfirmPasswordButton ? _passwordControllerVerifaciton : _passwordController :  isEmailButton ? _emailController : _usernameController,
+      
+      //(isPasswordButton ? : _emailController,
       cursorColor: AppTheme.textColor,
-      obscureText: isLoginButton ? true : false,
+      obscureText: isPasswordButton ? true : false,
       autocorrect: false,
-      keyboardType: isLoginButton
+      keyboardType: isPasswordButton
           ? TextInputType.visiblePassword
           : TextInputType.emailAddress,
       cursorErrorColor: AppTheme.textColor,

@@ -1,6 +1,7 @@
 {
     "welcome": "Welcome,",
-    "please": "Please login",
+    "pleaselogin": "Please log in",
+    "pleaseregister": "Please register",
     "send": "SEND",
     "donthave": "Don't have an account?",
     "forgotpassword": "Forgot your password?",
