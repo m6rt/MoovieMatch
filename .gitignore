@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # See https://www.dartlang.org/guides/libraries/private-files
 
 # Files and directories created by pub
@@ -28,7 +27,7 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
-=======
+
 # Miscellaneous
 *.class
 *.log
@@ -48,11 +47,6 @@ migrate_working_dir/
 *.ipr
 *.iws
 .idea/
-
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
 
 # Flutter/Dart/Pub related
 **/doc/api/
@@ -74,4 +68,3 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
->>>>>>> 8cb59ab (Login View UI completed. Localizaiton Added.Theme added)
