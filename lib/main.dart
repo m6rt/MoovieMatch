@@ -8,7 +8,6 @@ import 'package:provider/provider.dart';
 
 void main() {
   runApp(
-    
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (context) => LocaleProvider()),
@@ -24,7 +23,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Consumer<LocaleProvider>(
-      
       builder: (context, localeProvider, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
@@ -36,7 +34,7 @@ class MyApp extends StatelessWidget {
             GlobalCupertinoLocalizations.delegate,
           ],
           supportedLocales: S.delegate.supportedLocales,
-          home:  RegisterView(),
+          home: RegisterView(),
         );
       },
     );

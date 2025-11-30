@@ -29,7 +29,12 @@ class LoginView extends StatelessWidget {
             child: Image(image: AssetImage("assets/images/logo.png")),
           ),
           Padding(
-            padding:  EdgeInsets.fromLTRB(screenWidth*0.05, screenHeight*0.75, 0, 0),
+            padding: EdgeInsets.fromLTRB(
+              screenWidth * 0.05,
+              screenHeight * 0.75,
+              0,
+              0,
+            ),
             child: Text(
               S.of(context).welcome,
               style: TextStyle(
@@ -40,7 +45,12 @@ class LoginView extends StatelessWidget {
             ),
           ),
           Padding(
-            padding:  EdgeInsets.fromLTRB(screenWidth*0.05, screenHeight*0.9, 0, 0),
+            padding: EdgeInsets.fromLTRB(
+              screenWidth * 0.05,
+              screenHeight * 0.9,
+              0,
+              0,
+            ),
             child: Text(
               S.of(context).pleaselogin,
               style: TextStyle(
@@ -51,8 +61,19 @@ class LoginView extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(screenWidth * 0.05,screenHeight * 1.15,0,0,),
-            child: loginTextFields(screenHeight, screenWidth, false,true,false), //email
+            padding: EdgeInsets.fromLTRB(
+              screenWidth * 0.05,
+              screenHeight * 1.15,
+              0,
+              0,
+            ),
+            child: loginTextFields(
+              screenHeight,
+              screenWidth,
+              false,
+              true,
+              false,
+            ), //email
           ),
           Padding(
             padding: EdgeInsets.fromLTRB(
@@ -61,29 +82,52 @@ class LoginView extends StatelessWidget {
               0,
               0,
             ),
-            child: loginTextFields(screenHeight, screenWidth, true,false,true), //password
+            child: loginTextFields(
+              screenHeight,
+              screenWidth,
+              true,
+              false,
+              false,
+            ), //password
           ),
           Padding(
-            padding:  EdgeInsets.fromLTRB(screenWidth*0.05, screenHeight*1.42, 0, 0),
+            padding: EdgeInsets.fromLTRB(
+              screenWidth * 0.05,
+              screenHeight * 1.42,
+              0,
+              0,
+            ),
             child: forgotPasswordButton(S.of(context).forgotpassword),
           ),
           Padding(
-            padding:  EdgeInsets.fromLTRB(screenWidth*0.6, screenHeight*1.42, 0, 0),
-            child: dontHaveButton(S.of(context).donthave),),
-          
+            padding: EdgeInsets.fromLTRB(
+              screenWidth * 0.6,
+              screenHeight * 1.42,
+              0,
+              0,
+            ),
+            child: dontHaveButton(context, S.of(context).donthave),
+          ),
+
           Padding(
-            padding:  EdgeInsets.fromLTRB(screenWidth*0.25, screenHeight*1.55, 0, 0),
-            child: GestureDetector(onTap: () {
-              //Auth Yapılacak
-            },
+            padding: EdgeInsets.fromLTRB(
+              screenWidth * 0.25,
+              screenHeight * 1.55,
+              0,
+              0,
+            ),
+            child: GestureDetector(
+              onTap: () {
+                //Auth Yapılacak
+              },
               child: sendButton(screenHeight, screenWidth, S.of(context).send),
             ),
           ),
           Padding(
-            padding:  EdgeInsets.fromLTRB(0, screenHeight*1.8, 0, 0),
+            padding: EdgeInsets.fromLTRB(0, screenHeight * 1.8, 0, 0),
             child: DottedLine(
               direction: Axis.horizontal,
-              lineLength: screenWidth*0.4,
+              lineLength: screenWidth * 0.4,
               lineThickness: 1.0,
               dashLength: 7.0,
               dashColor: AppTheme.textColor,
@@ -94,8 +138,14 @@ class LoginView extends StatelessWidget {
             ),
           ),
           Padding(
-            padding:  EdgeInsets.fromLTRB(screenWidth*0.4, screenHeight*1.78, 0, 0),
-            child: Text(S.of(context).orsigninwith,
+            padding: EdgeInsets.fromLTRB(
+              screenWidth * 0.4,
+              screenHeight * 1.78,
+              0,
+              0,
+            ),
+            child: Text(
+              S.of(context).orsigninwith,
               style: TextStyle(
                 color: AppTheme.textColor,
                 fontSize: 12,
@@ -103,11 +153,16 @@ class LoginView extends StatelessWidget {
               ),
             ),
           ),
-           Padding(
-            padding:  EdgeInsets.fromLTRB(screenWidth*0.6, screenHeight*1.8, 0, 0),
+          Padding(
+            padding: EdgeInsets.fromLTRB(
+              screenWidth * 0.6,
+              screenHeight * 1.8,
+              0,
+              0,
+            ),
             child: DottedLine(
               direction: Axis.horizontal,
-              lineLength: screenWidth*0.4,
+              lineLength: screenWidth * 0.4,
               lineThickness: 1.0,
               dashLength: 7.0,
               dashColor: AppTheme.textColor,
@@ -118,15 +173,33 @@ class LoginView extends StatelessWidget {
             ),
           ),
           Padding(
-            padding:  EdgeInsets.fromLTRB(screenWidth*0.4, screenHeight*1.85, 0, 0),
-            child: Image(height: screenHeight*0.2,image: AssetImage("assets/images/googleIcon.png"),),
+            padding: EdgeInsets.fromLTRB(
+              screenWidth * 0.4,
+              screenHeight * 1.85,
+              0,
+              0,
+            ),
+            child: Image(
+              height: screenHeight * 0.2,
+              image: AssetImage("assets/images/googleIcon.png"),
+            ),
           ),
           Padding(
-            padding:  EdgeInsets.fromLTRB(screenWidth*0.2, screenHeight*1.9, screenWidth*0.2, 0),
+            padding: EdgeInsets.fromLTRB(
+              screenWidth * 0.2,
+              screenHeight * 1.9,
+              screenWidth * 0.2,
+              0,
+            ),
             child: setEnglishButton(context),
           ),
           Padding(
-            padding:  EdgeInsets.fromLTRB(screenWidth*0.7, screenHeight*1.9, 0, 0),
+            padding: EdgeInsets.fromLTRB(
+              screenWidth * 0.7,
+              screenHeight * 1.9,
+              0,
+              0,
+            ),
             child: setTurkishLanguageButton(context),
           ),
         ],
