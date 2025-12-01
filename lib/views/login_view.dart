@@ -120,7 +120,7 @@ class LoginView extends StatelessWidget {
               onTap: () {
                 //Auth Yapılacak
               },
-              child: sendButton(screenHeight, screenWidth, S.of(context).send),
+              child: sendButton(screenHeight, screenWidth, context, false),
             ),
           ),
           Padding(

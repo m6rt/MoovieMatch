@@ -295,6 +295,71 @@ class S {
       args: [],
     );
   }
+
+  /// `Username is already taken`
+  String get usernametaken {
+    return Intl.message(
+      'Username is already taken',
+      name: 'usernametaken',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `LOGIN`
+  String get login {
+    return Intl.message('LOGIN', name: 'login', desc: '', args: []);
+  }
+
+  /// `Email is already in use`
+  String get alreadyinuse {
+    return Intl.message(
+      'Email is already in use',
+      name: 'alreadyinuse',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The password provided is too weak.`
+  String get weakpassword {
+    return Intl.message(
+      'The password provided is too weak.',
+      name: 'weakpassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `An error occurred. Please try again later.`
+  String get anerroroccurred {
+    return Intl.message(
+      'An error occurred. Please try again later.',
+      name: 'anerroroccurred',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Wrong password provided for that user.`
+  String get wrongpassword {
+    return Intl.message(
+      'Wrong password provided for that user.',
+      name: 'wrongpassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The email address is badly formatted.`
+  String get invalidmail {
+    return Intl.message(
+      'The email address is badly formatted.',
+      name: 'invalidmail',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

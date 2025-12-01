@@ -34,5 +34,12 @@
     "Ayarlar": "Ayarlar",
     "bildirimler": "Bildirimler",
     "yorumunubegendi": "yorumunuzu beğendi",
-    "geribildirimler": "Geri Bildirimler"
+    "geribildirimler": "Geri Bildirimler",
+    "login": "GİRİŞ",
+    "usernametaken": "Kullanıcı adı zaten alınmış",
+    "alreadyinuse": "E-posta zaten kullanımda",
+    "weakpassword": "Girilen şifre çok zayıf.",
+    "anerroroccurred": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
+    "wrongpassword": "Bu kullanıcı için yanlış şifre girildi.",
+    "invalidmail": "E-posta adresi geçersiz."
 }

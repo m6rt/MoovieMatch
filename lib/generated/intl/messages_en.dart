@@ -30,6 +30,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "alreadyhave": MessageLookupByLibrary.simpleMessage(
       "Already have an account?",
     ),
+    "alreadyinuse": MessageLookupByLibrary.simpleMessage(
+      "Email is already in use",
+    ),
+    "anerroroccurred": MessageLookupByLibrary.simpleMessage(
+      "An error occurred. Please try again later.",
+    ),
     "bildirimler": MessageLookupByLibrary.simpleMessage("Notifications"),
     "donthave": MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
     "favorilereekle": MessageLookupByLibrary.simpleMessage("Add to Favorites"),
@@ -43,10 +49,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "inordertouse": MessageLookupByLibrary.simpleMessage(
       "in order to use, please verify your email address.",
     ),
+    "invalidmail": MessageLookupByLibrary.simpleMessage(
+      "The email address is badly formatted.",
+    ),
     "izlemelistesineekle": MessageLookupByLibrary.simpleMessage(
       "Add to Watchlist",
     ),
     "kategori": MessageLookupByLibrary.simpleMessage("Category"),
+    "login": MessageLookupByLibrary.simpleMessage("LOGIN"),
     "notverifiedyet": MessageLookupByLibrary.simpleMessage(
       "Your email not verified yet.",
     ),
@@ -58,8 +68,17 @@ class MessageLookup extends MessageLookupByLibrary {
     "send": MessageLookupByLibrary.simpleMessage("SEND"),
     "takip": MessageLookupByLibrary.simpleMessage("Follow"),
     "takipciler": MessageLookupByLibrary.simpleMessage("Followers"),
+    "usernametaken": MessageLookupByLibrary.simpleMessage(
+      "Username is already taken",
+    ),
     "verify": MessageLookupByLibrary.simpleMessage("VERIFY"),
+    "weakpassword": MessageLookupByLibrary.simpleMessage(
+      "The password provided is too weak.",
+    ),
     "welcome": MessageLookupByLibrary.simpleMessage("Welcome,"),
+    "wrongpassword": MessageLookupByLibrary.simpleMessage(
+      "Wrong password provided for that user.",
+    ),
     "yazar": MessageLookupByLibrary.simpleMessage("Writer"),
     "yorumlaragit": MessageLookupByLibrary.simpleMessage("Go to Comments"),
     "yorumunubegendi": MessageLookupByLibrary.simpleMessage(

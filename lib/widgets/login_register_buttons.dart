@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mooviematch/constants/theme.dart';
+import 'package:mooviematch/generated/l10n.dart';
 import 'package:mooviematch/services/auth_service.dart';
 import 'package:mooviematch/views/login_view.dart';
 import 'package:mooviematch/views/register_view.dart';
@@ -64,14 +65,26 @@ Widget loginTextFields(
   );
 }
 
-Widget sendButton(double screenHeight, double screenWidth, String txt) {
+Widget sendButton(
+  double screenHeight,
+  double screenWidth,
+  BuildContext context,
+  bool register,
+) {
   return GestureDetector(
     onTap: () {
-      AuthService().signInWithEmailAndPassword(
-        _emailController.text,
-        _passwordController.text,
-        _usernameController.text,
-      );
+      register
+          ? AuthService().createUserWithEmailAndPassword(
+              _emailController.text,
+              _passwordController.text,
+              _usernameController.text,
+              context,
+            )
+          : AuthService().signInWithEmailAndPassword(
+              _emailController.text,
+              _passwordController.text,
+              context,
+            );
     },
     child: Container(
       width: screenWidth * 0.4,
@@ -83,7 +96,7 @@ Widget sendButton(double screenHeight, double screenWidth, String txt) {
       ),
       child: Center(
         child: Text(
-          txt,
+          register ? S.of(context).register : S.of(context).login,
           style: const TextStyle(
             color: AppTheme.textColor,
             fontSize: 24,

@@ -32,6 +32,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "alreadyhave": MessageLookupByLibrary.simpleMessage(
       "Zaten bir hesabınız var mı?",
     ),
+    "alreadyinuse": MessageLookupByLibrary.simpleMessage(
+      "E-posta zaten kullanımda",
+    ),
+    "anerroroccurred": MessageLookupByLibrary.simpleMessage(
+      "Bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
+    ),
     "bildirimler": MessageLookupByLibrary.simpleMessage("Bildirimler"),
     "donthave": MessageLookupByLibrary.simpleMessage("Hesabınız yok mu?"),
     "favorilereekle": MessageLookupByLibrary.simpleMessage("Favorilere Ekle"),
@@ -45,10 +51,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "inordertouse": MessageLookupByLibrary.simpleMessage(
       "Devam etmek için lütfen e-posta adresinizi doğrulayın.",
     ),
+    "invalidmail": MessageLookupByLibrary.simpleMessage(
+      "E-posta adresi geçersiz.",
+    ),
     "izlemelistesineekle": MessageLookupByLibrary.simpleMessage(
       "İzleme Listesine Ekle",
     ),
     "kategori": MessageLookupByLibrary.simpleMessage("Kategori"),
+    "login": MessageLookupByLibrary.simpleMessage("GİRİŞ"),
     "notverifiedyet": MessageLookupByLibrary.simpleMessage(
       "E-posta adresiniz henüz doğrulanmadı.",
     ),
@@ -60,8 +70,17 @@ class MessageLookup extends MessageLookupByLibrary {
     "send": MessageLookupByLibrary.simpleMessage("GONDER"),
     "takip": MessageLookupByLibrary.simpleMessage("Takip Et"),
     "takipciler": MessageLookupByLibrary.simpleMessage("Takipçiler"),
+    "usernametaken": MessageLookupByLibrary.simpleMessage(
+      "Kullanıcı adı zaten alınmış",
+    ),
     "verify": MessageLookupByLibrary.simpleMessage("DOĞRULA"),
+    "weakpassword": MessageLookupByLibrary.simpleMessage(
+      "Girilen şifre çok zayıf.",
+    ),
     "welcome": MessageLookupByLibrary.simpleMessage("Hoşgeldiniz,"),
+    "wrongpassword": MessageLookupByLibrary.simpleMessage(
+      "Bu kullanıcı için yanlış şifre girildi.",
+    ),
     "yazar": MessageLookupByLibrary.simpleMessage("Yazar"),
     "yorumlaragit": MessageLookupByLibrary.simpleMessage("Yorumlara Git"),
     "yorumunubegendi": MessageLookupByLibrary.simpleMessage(

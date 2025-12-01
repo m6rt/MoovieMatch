@@ -150,7 +150,7 @@ class RegisterView extends StatelessWidget {
               0,
               0,
             ),
-            child: sendButton(screenHeight, screenWidth, S.of(context).send),
+            child: sendButton(screenHeight, screenWidth, context, true),
           ),
           Padding(
             padding: EdgeInsets.fromLTRB(0, screenHeight * 1.9, 0, 0),

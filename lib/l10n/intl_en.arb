@@ -34,5 +34,13 @@
     "Ayarlar": "Settings",
     "bildirimler": "Notifications",
     "yorumunubegendi": "liked your comment",
-    "geribildirimler": "Feedbacks"
+    "geribildirimler": "Feedbacks",
+    "usernametaken": "Username is already taken",
+    "login": "LOGIN",
+    "alreadyinuse": "Email is already in use",
+    "weakpassword": "The password provided is too weak.",
+    "anerroroccurred": "An error occurred. Please try again later.",
+    "wrongpassword": "Wrong password provided for that user.",
+    "invalidmail": "The email address is badly formatted."
+    
 }
